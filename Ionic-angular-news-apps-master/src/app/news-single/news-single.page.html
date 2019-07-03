@@ -1,0 +1,18 @@
+<ion-header translucent> 
+  <ion-toolbar>
+    <ion-title>Article</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card>
+    <img src="{{currentNews.urlToImage}}" />
+    <ion-card-header>
+      <ion-card-subtitle>DESTINATION</ion-card-subtitle>
+      <ion-card-title>{{currentNews.source.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    {{currentNews.content}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

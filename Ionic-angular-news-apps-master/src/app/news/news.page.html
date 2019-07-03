@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Top Headlines</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let news of headlines">
+    <ion-card-content (click)="getNewsDetails(news)">{{news.title}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
